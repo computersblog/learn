@@ -1,18 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheComputerBlog: Learn</title>
     <link rel="stylesheet" href="style.css">
-    <body>
-     <h1>Website of Computers</h1>
-      <h2>Learn!</h2>
-      <h2> Learn about computers: </h2>
-      <a href="https://computersblog.github.io/computer/">
-        <button> Learn </button>
-      </a>
-      <h2> Learn about the web :</h2>
-      <a href="https://computersblog.github.io/theweb/">
-        <button> Learn </button>
-      </a>
-    </body>
+    <style>
+      /* === BACKGROUND === */
+      body {
+        background: linear-gradient(135deg, #a8edea, #fed6e3);
+        font-family: "Inter", sans-serif;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* === HEADER === */
+      h1 {
+        margin-top: 50px;
+        font-family: "Roboto Slab", serif;
+        color: rgba(0, 0, 50, 0.8);
+        text-shadow: 0 3px 10px rgba(0, 150, 255, 0.2);
+      }
+
+      h2 {
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        margin-bottom: 40px;
+      }
+
+      /* === CARD STYLE LINKS === */
+      .card {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px) saturate(160%);
+        -webkit-backdrop-filter: blur(12px) saturate(160%);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px auto;
+        width: 85%;
+        max-width: 450px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 12px 35px rgba(0, 180, 255, 0.2);
+      }
+
+      a {
+        text-decoration: none;
+        color: #0044aa;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      a:hover {
+        color: #0077cc;
+      }
+
+      /* === FOOTER === */
+      footer {
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 60px;
+        padding: 10px;
+      }
+    </style>
   </head>
+  <body>
+    <h1>TheComputerBlog: Learn</h1>
+    <h2>Learn something new here about computers! We hope y’all like it!</h2>
+
+    <div class="card">
+      <h3>1. Computers</h3>
+      <a href="https://computersblog.github.io/computer">Go to topic →</a>
+    </div>
+
+    <div class="card">
+      <h3>2. The Web</h3>
+      <a href="https://computersblog.github.io/theweb/">Go to topic →</a>
+    </div>
+
+    <footer>© 2025 TheComputerBlog | WEP Tech</footer>
+  </body>
 </html>
