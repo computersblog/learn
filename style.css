@@ -1,125 +1,61 @@
-/* === 🌊 THE OCEAN GLASS UPDATE === */
+ body {
+        background: linear-gradient(135deg, #a8edea, #fed6e3);
+        font-family: "Inter", sans-serif;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
-/* === BACKGROUND === */
-body {
-  background: radial-gradient(circle at top left, #dffcff 0%, #eaf7ff 40%, #f9faff 100%);
-  font-family: "Inter", sans-serif;
-  color: #0a0a0a;
-  margin: 0;
-  padding: 0;
-  background-attachment: fixed;
-}
+      /* === HEADER === */
+      h1 {
+        margin-top: 50px;
+        font-family: "Roboto Slab", serif;
+        color: rgba(0, 0, 50, 0.8);
+        text-shadow: 0 3px 10px rgba(0, 150, 255, 0.2);
+      }
 
-/* === HEADINGS === */
-h1, h2 {
-  font-family: "Poppins", "Roboto Slab", serif;
-  text-align: center;
-  color: rgba(0, 40, 70, 0.9);
-  letter-spacing: 0.5px;
-}
+      h2 {
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        margin-bottom: 40px;
+      }
 
-h2 {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
-  padding-bottom: 10px;
-  margin-top: 30px;
-}
+      /* === CARD STYLE LINKS === */
+      .card {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px) saturate(160%);
+        -webkit-backdrop-filter: blur(12px) saturate(160%);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px auto;
+        width: 85%;
+        max-width: 450px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      }
 
-/* === NAVBAR (Glassy Floating Bar) === */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  background: rgba(255, 255, 255, 0.18);
-  padding: 14px 22px;
-  border-radius: 20px;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 10px 40px rgba(100, 200, 255, 0.25);
-  margin: 30px auto;
-  width: fit-content;
-  transition: all 0.3s ease;
-}
+      .card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 12px 35px rgba(0, 180, 255, 0.2);
+      }
 
-/* === NAV LINKS === */
-nav a {
-  color: #003366;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.25);
-  transition: all 0.35s ease;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
+      a {
+        text-decoration: none;
+        color: #0044aa;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
 
-nav a:hover {
-  background: linear-gradient(135deg, rgba(0,255,180,0.4), rgba(120,120,255,0.4));
-  transform: translateY(-3px) scale(1.07);
-  box-shadow: 0 6px 20px rgba(0, 180, 255, 0.25);
-  color: #0044cc;
-}
+      a:hover {
+        color: #0077cc;
+      }
 
-/* === RESPONSIVE NAV === */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    width: 90%;
-    text-align: center;
-    margin: 5px 0;
-  }
-}
-
-/* === BUTTONS (Crystal Glow) === */
-button {
-  background: rgba(255, 255, 255, 0.2);
-  color: #004466;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 12px 28px;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: all 0.35s ease;
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  box-shadow: 0 6px 25px rgba(0, 180, 255, 0.2);
-}
-
-button:hover {
-  background: linear-gradient(135deg, rgba(100,255,200,0.4), rgba(140,140,255,0.4));
-  transform: scale(1.08);
-  box-shadow: 0 10px 35px rgba(0, 180, 255, 0.3);
-  color: #0033aa;
-}
-
-button:active {
-  transform: scale(0.96);
-  background: rgba(255, 255, 255, 0.35);
-}
-
-/* === PARAGRAPHS === */
-p {
-  padding: 10px 20px;
-  color: rgba(0, 0, 0, 0.85);
-  line-height: 1.6;
-}
-
-/* === FOOTER === */
-#rights {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  margin: 30px 20px;
-  box-shadow: 0 5px 20px rgba(0, 120, 255, 0.15);
-}
+      /* === FOOTER === */
+      footer {
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 60px;
+        padding: 10px;
+      }
